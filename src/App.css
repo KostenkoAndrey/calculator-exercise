@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -22,9 +22,9 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
-.App-link {
+/* .App-link {
   color: #61dafb;
 }
 
@@ -35,14 +35,13 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
 .calculator-container {
   width: 320px;
-  margin: 40px auto;
-  padding: 20px;
-  border-radius: 12px;
-  background: #f5f5f5;
+  padding: 15px;
+  border-radius: 24px;
+  background: #000000;
   box-shadow: 0 4px 16px rgba(0,0,0,0.12);
   display: flex;
   flex-direction: column;
@@ -55,23 +54,23 @@
   color: #fff;
   border-radius: 8px;
   padding: 16px 12px 8px 12px;
-  margin-bottom: 18px;
   text-align: right;
   min-height: 56px;
   box-sizing: border-box;
+  background-color: #000000;
 }
-
+/* 
 @media (max-width: 480px) {
   .calculator-display {
     font-size: 1.2rem;
     min-height: 200%;
     width: 120vw;
   }
-}
+} */
 
 .calculator-input {
-  font-size: 1.2rem;
-  opacity: 0.8;
+  font-size: 2.2rem;
+  /* opacity: 0.8; */
 }
 
 .calculator-result {
@@ -81,40 +80,48 @@
 }
 
 .calculator-buttons {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 60px);
-  grid-gap: 12px;
+  justify-content: center;
+  gap: 10px;
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   .calculator-buttons {
     grid-template-columns: repeat(6, 100%);
   }
-}
+} */
 
 .calc-btn {
   padding: 18px 0;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  font-weight: 700;
   border: none;
-  border-radius: 6px;
-  background: #e0e0e0;
+  border-radius: 50%;
+  color: #ffffff;
+  background: #333333;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: background-color 0.2s;
 }
 
 .calc-btn:hover {
-  background: #bdbdbd;
+  opacity: 80%;
 }
 
-.calc-btn-+,
-.calc-btn--,
-.calc-btn-*,
-.calc-btn-/ {
-  background: #ffb300;
+.calc-btn-plus,
+.calc-btn-minus,
+.calc-btn-mul,
+.calc-btn-div,
+.calc-btn-eq {
+  background-color: #FF9500;
   color: #fff;
 }
 
-.calc-btn-C {
-  background: #e53935;
+.calc-btn-clear,
+.calc-btn-PM,
+.calc-btn-percent {
+  background-color: #A5A5A5;
   color: #fff;
 }
+

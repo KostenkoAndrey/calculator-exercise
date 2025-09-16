@@ -92,7 +92,7 @@ export default class CalculatorService implements CalculatorServiceType {
       this.inputOperator(key);
     } else if (key === "=") {
       this.inputEquals();
-    } else if (key === "C") {
+    } else if (key === "AC") {
       this.clear();
     }
   }
