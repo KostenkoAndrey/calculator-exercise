@@ -94,7 +94,12 @@
 } */
 
 .calc-btn {
-  padding: 18px 0;
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px; /* одинаковая ширина и высота */
+  height: 60px;
   font-size: 1.3rem;
   font-weight: 700;
   border: none;
@@ -123,5 +128,9 @@
 .calc-btn-percent {
   background-color: #A5A5A5;
   color: #fff;
+}
+
+.calc-btn-{
+cursor: not-allowed;
 }
 

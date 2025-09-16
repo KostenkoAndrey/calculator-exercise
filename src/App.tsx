@@ -1,24 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 import ButtonPanel from "./ButtonPanel";
 import Display from "./Display";
 import { withCalculatorProxy } from "./withCalculatorProxy";
 import { useDisplayValue } from "./useDisplayValue";
-import { displayValue } from "./types";
+import type { displayValue as DisplayValue } from "./types";
 
 import "./index.css";
 import "./App.css";
 
 
 const Calculator: React.FC<{ proxiedService?: any }> = ({ proxiedService }) => {
-  const [localDisplay, setLocalDisplay] = useState<string>("");
-  const displayValue = useDisplayValue();
-
-  useEffect(() => {
-    setLocalDisplay(displayValue);
-  }, [displayValue]);
-
-  useEffect(() => {}, [localDisplay]);
+  const display = useDisplayValue();
 
     const buttons = [
     "AC", "+/-", "%", "÷",
@@ -29,14 +22,12 @@ const Calculator: React.FC<{ proxiedService?: any }> = ({ proxiedService }) => {
   ];
 
   const handleButtonClick = (key: string) => {
-    if (proxiedService) {
-      proxiedService.handleKey(key);
-    }
+  proxiedService?.handleKey(key);
   };
 
   return (
     <div className="calculator-container">
-      <Display value={localDisplay as displayValue} operand={0} />
+      <Display value={display as DisplayValue} operand={0} />
       <ButtonPanel buttons={buttons} onButtonClick={handleButtonClick} />
     </div>
   );
