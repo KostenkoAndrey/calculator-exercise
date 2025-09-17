@@ -1,13 +1,13 @@
 import React from "react";
 
-import ButtonPanel from "./ButtonPanel";
-import Display from "./Display";
-import { withCalculatorProxy } from "./withCalculatorProxy";
-import { useDisplayValue } from "./useDisplayValue";
-import type { displayValue as DisplayValue } from "./types";
+import ButtonPanel from "./components/ButtonPanel";
+import Display from "./components/Display";
+import { withCalculatorProxy } from "./features/calculator/withCalculatorProxy";
+import { useDisplayValue } from "./hooks/useDisplayValue";
+import type { displayValue as DisplayValue } from "./types/types";
 
-import "./index.css";
-import "./App.css";
+import "./styles/index.css";
+import "./styles/App.css";
 
 
 const Calculator: React.FC<{ proxiedService?: any }> = ({ proxiedService }) => {

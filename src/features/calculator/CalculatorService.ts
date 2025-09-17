@@ -1,4 +1,4 @@
-import { CalculatorService as CalculatorServiceType } from "./types";
+import { CalculatorService as CalculatorServiceType } from "../../types/types";
 
 export default class CalculatorService implements CalculatorServiceType {
   private displayValue: string = "0";

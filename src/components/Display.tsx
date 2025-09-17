@@ -1,5 +1,5 @@
 import React from "react";
-import type { displayValue } from "./types";
+import type { displayValue } from "../types/types";
 
 const Display: React.FC<{ value: displayValue | undefined;}> = ({ value }) => (
   <div className="calculator-display">
