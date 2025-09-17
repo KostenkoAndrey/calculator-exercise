@@ -46,7 +46,6 @@ export default class CalculatorService implements CalculatorServiceType {
         this.expression = parts.join(" ");
       }
     }
-
     this.emit();
   }
 
@@ -111,7 +110,6 @@ export default class CalculatorService implements CalculatorServiceType {
   } else {
     this.expression = this.displayValue;
   }
-
     this.emit();
   }
 
@@ -141,7 +139,6 @@ export default class CalculatorService implements CalculatorServiceType {
     this.displayValue = String(result);
     this.expression = this.displayValue;
   }
-
   this.emit();
   }
 

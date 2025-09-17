@@ -17,8 +17,8 @@ export const useCalculatorContext = () => {
 
 export const CalculatorProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [displayValue, setDisplayValue] = useState<string>("0");
-  // @ts-ignore
-  const serviceRef = useRef<CalculatorService>();
+  const serviceRef = useRef<CalculatorService | null>(null);
+  
   if (!serviceRef.current) {
     serviceRef.current = new CalculatorService(setDisplayValue);
   }

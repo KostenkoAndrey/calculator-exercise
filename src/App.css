@@ -1,42 +1,3 @@
-/* .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-} */
-
-/* .App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
 .calculator-container {
   width: 320px;
   padding: 15px;
@@ -59,18 +20,9 @@
   box-sizing: border-box;
   background-color: #000000;
 }
-/* 
-@media (max-width: 480px) {
-  .calculator-display {
-    font-size: 1.2rem;
-    min-height: 200%;
-    width: 120vw;
-  }
-} */
 
 .calculator-input {
   font-size: 2.2rem;
-  /* opacity: 0.8; */
 }
 
 .calculator-result {
@@ -87,18 +39,12 @@
   gap: 10px;
 }
 
-/* @media (max-width: 480px) {
-  .calculator-buttons {
-    grid-template-columns: repeat(6, 100%);
-  }
-} */
-
 .calc-btn {
   line-height: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60px; /* одинаковая ширина и высота */
+  width: 60px;
   height: 60px;
   font-size: 1.3rem;
   font-weight: 700;
