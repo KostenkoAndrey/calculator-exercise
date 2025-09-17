@@ -27,7 +27,7 @@ const Calculator: React.FC<{ proxiedService?: any }> = ({ proxiedService }) => {
 
   return (
     <div className="calculator-container">
-      <Display value={display as DisplayValue} operand={0} />
+      <Display value={display as DisplayValue} />
       <ButtonPanel buttons={buttons} onButtonClick={handleButtonClick} />
     </div>
   );
